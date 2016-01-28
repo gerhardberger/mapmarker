@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+input[type="text"] {
+  font-size: 14px;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  background: transparent;
+  width: 180px;
+  margin: 0 12px 0 4px;
+}
+
+input[type="text"]:focus {
+  border-color: #222;
+}
+
+label {
+  font-size: 13px;
+  padding: 8px 8px 8px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: 13px;
+  padding: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(212, 146, 60);
+
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+
+  padding: 6px 0;
+}
+
+.container {
+  position: absolute;
+  margin: 0;
+}
+
+.item {
+  padding: 8px 0px;
+  text-align: center;
+}
+
+.settings {
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  width: 294px;
+
+  border-bottom-right-radius: 10px;
+}
+
+.list {
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  width: 380px;
+
+  border-bottom-left-radius: 10px;
+}
+
+.settings, .list {
+  padding: 8px 8px;
+
+  background: rgba(255, 255, 255, .84);
+
+  box-shadow: rgba(0, 0, 0, .3) 0 0 10px;
+}
+
+.gmap {
+  z-index: 1;
+
+  text-align: center;
+  width: 100%;
+}

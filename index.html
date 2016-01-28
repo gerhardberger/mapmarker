@@ -1,0 +1,63 @@
+<html>
+
+  <head>
+
+    <title>🚩 Mapmarker</title>
+
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <link rel="stylesheet" href="main.css" media="screen" charset="utf-8">
+
+  </head>
+
+  <body>
+    <div class="container settings">
+      <div class="item">
+        <label for="mapcenter">Center</label>
+        <input type="text" id="mapcenter" value="Cegled">
+      </div>
+
+      <div class="item">
+        <label for="mapzoom">Zoom</label>
+        <input type="range" min="1" max="10" value="7" step="1" id="mapzoom">
+      </div>
+
+      <div class="item">
+        <label for="mapscale">Scale</label>
+        <input type="range" min="1" max="5" value="2" step="1" id="mapscale">
+      </div>
+
+      <div class="item">
+        <select id="maptype">
+          <option value="terrain" selected>Terrain</option>
+          <option value="roadmap">Roadmap</option>
+          <option value="hybrid">Hybrid</option>
+          <option value="satellite">Satellite</option>
+        </select>
+      </div>
+
+      <div class="item">
+        <button class="map-submit">Draw</button>
+      </div>
+
+      <div class="item">
+        <a href="" target="_blank" id="address"></a>
+      </div>
+    </div>
+
+    <div class="container list">
+      <ul id="markers">
+      </ul>
+      <div class="item">
+        <button id="addmarker">Add</button>
+      </div>
+    </div>
+
+    <div class="container gmap">
+      <img id="mapimg" src="http://maps.googleapis.com/maps/api/staticmap?size=1600x1600&sensor=false&center=Cegled&zoom=2&scale=2&maptype=terrain">
+    </div>
+  </body>
+
+</html>
